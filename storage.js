@@ -68,7 +68,7 @@ class Database {
 
     load() {
         try {
-            this.users = JSON.parse(FileSystem.readFileSync('users.json'))
+            this.users = JSON.parse(FileSystem.readFileSync('database.json'))
         } catch (error) {
             this.users = []
         }
