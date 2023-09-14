@@ -63,7 +63,7 @@ class Database {
     }
 
     save() {
-        FileSystem.writeFileSync('users.json', JSON.stringify(this.users))
+        FileSystem.writeFileSync('database.json', JSON.stringify(this.users))
     }
 
     load() {
